@@ -1,1 +1,1 @@
-### Repositório para projetos praticados em cursos e faculdade.
+### Repositório para projetos praticados em cursos e na faculdade.
