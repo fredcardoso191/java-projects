@@ -12,7 +12,7 @@ public class Program {
             System.out.print("Digite o valor de saque: ");
             valorSaque = sc.nextInt();
             if (valorSaque == 0 || valorSaque == 1 || valorSaque == 3 || valorSaque > valorMaxSaque) {
-                System.out.println("Digite um valor de saque válido!\n");
+                System.out.println("\nDigite um valor de saque válido!\n");
             }
         } while (valorSaque == 0 || valorSaque == 1 || valorSaque == 3 || valorSaque > valorMaxSaque);
 
@@ -28,7 +28,8 @@ public class Program {
 
         for (int nota : notas) {
             if (valorSaque >= nota) {
-                System.out.println(valorSaque / nota + " notas de " + nota);
+                if (valorSaque / nota == 1) System.out.println(valorSaque / nota + " nota de " + nota);
+                else System.out.println(valorSaque / nota + " notas de " + nota);
                 valorSaque = valorSaque % nota;
             }
         }
